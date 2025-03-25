@@ -7,10 +7,12 @@ const turnHead = 2
 const minTime = 5
 const maxTime = 15
 static = write
-if(static == write){
-    time.sleep(random.randint(minTime, maxTime))
-    
-}
-elif(static == turnHead){
 
-}
+def EastLineStatic:
+    if(static == write){
+        time.sleep(random.randint(minTime, maxTime))
+        static = turnHead
+    }
+    elif(static == turnHead){
+        
+    }
